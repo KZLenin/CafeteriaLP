@@ -1,0 +1,227 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    background-image: url('images/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #FFF;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li {
+    margin-left: 20px;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(144, 114, 81);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(180, 158, 162);
+}
+
+/* Sección de Reserva */
+.reserva {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.reserva h2 {
+    font-size: 35px;
+    color: #F9fafc;
+    margin-bottom: 10px;
+}
+
+.reserva h3 {
+    font-size: 28px;
+    color: #E5E5E5;
+}
+
+.reserva p,
+.reserva ul {
+    font-size: 18px;
+    color: #C5C5C5;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.foto-cafe {
+    width: 400px !important;   /* Ancho de la imagen */
+    height: 400px !important;  /* Alto de la imagen */
+    object-fit: cover;  /* Asegura que la imagen se ajuste sin distorsionarse */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.reserva-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.foto-cafe-contenedor {
+    flex-shrink: 50;
+}
+
+.foto-cafe {
+    width: 180px;
+    height: auto;
+}
+
+/* Sección de Contenido */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 20px; 
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.calendario {
+    width: 45%;
+}
+
+.calendario h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendario table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.calendario th,
+.calendario td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.calendario th {
+    background-color: #F5F5F5;
+}
+
+.calendario td {
+    background-color: #FFF;
+}
+
+
+/* Opiniones */
+.opiniones {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.opiniones-cuadro {
+    color: #FFF;
+}
+
+.opiniones-cuadro h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.opiniones-cuadro p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a img {
+    width: 25px;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+
+.social-icons a img:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+

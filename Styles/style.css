@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('salon.jpeg'); /* Fondo general */
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    height: 60px;
+    width: 100px;
+    margin-left: 200px;
+}
+
+.logo h1, .logo p {
+    margin: 0;
+    color: #fddcdc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding-right: 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.conocenos {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.conocenos h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.sucursales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sucursal {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espacio entre elementos dentro de cada sucursal */
+}
+
+.sucursal h3 {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
+
+.sucursal button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Asegura que todos los botones tengan el mismo ancho */
+    max-width: 150px; /* Ajusta el tamaño máximo de los botones */
+    text-align: center;
+}
+
+
+.historia {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Configuración del pie de página */
+.pie-pagina {
+    background-color: #2b200e;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 2px;
+}
+
+.facebook-icon {
+    width: 60px;
+    height:35px;
+    cursor: pointer;
+}
+
+.insta-icon {
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}

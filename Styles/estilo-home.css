@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(cafe-frio.jpg) center bottom no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 65px;
+    font-weight: 800;
+    width: 50px;
+    height: 70px;
+}
+
+.logo img {
+    width: 80px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 80px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 26px;
+    color: rgb(144, 114, 81);
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(180, 158, 162);
+}
+
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 80px;
+    color: #F9fafc;
+    text-transform: uppercase;
+    margin-top: 39px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    text-align: center;
+}
+
+.boton-1 {
+    display: inline-block;    /*Aplicar bien el margen y padding */
+    padding: 11px 45px;
+    margin-top: 30px;
+    background-color: rgb(133, 42, 24);
+    color: rgb(255, 223, 223);
+    text-transform: Uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton-1:hover {
+    background-color: rgb(183, 120, 120);
+}
+
+.coffee {
+    padding: 100px 0;
+    background-color: #fafaea;
+    position: relative;
+}
+
+.coffee-content {
+    text-align: center;
+}
+
+.coffee-content h2 {
+    font-size: 45px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 150px;
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.txt-parrafo {
+    font-size: 20px;
+    color: #1d2638;
+    padding: 0 250px;
+    margin-bottom: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.coffee-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.coffee-1 {
+    padding: 25px;
+}
+
+.coffee-1 img {
+    width: 300px;
+    height: 220px;
+    transition: transform 1.3s ease-in-out;
+}
+
+.cofee-1 img:hover {
+    transform: translateY(-10px);
+}
+
+.coffee-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffee-1 h3 {
+    color: rgb(89, 14, 14);
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.coffee-1 p {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Configuración del pie de página */
+.pie-pagina {
+    background-color: #2e1f03;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 2px;
+}
+
+.facebook-icon {
+    width: 60px;
+    height:35px;
+    cursor: pointer;
+}
+
+.insta-icon {
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
