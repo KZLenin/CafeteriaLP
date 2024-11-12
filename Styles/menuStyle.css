@@ -20,7 +20,7 @@ body {
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
     ), 
-    url('sOURCE/blog3.jpg') center bottom no-repeat; /* Imagen de fondo */
+    url('https://i.ibb.co/V3FZMjv/blog3.jpg') center bottom no-repeat; /* Imagen de fondo */
     background-size: cover;
     background-position: center 20%;
     min-height: 70vh;
