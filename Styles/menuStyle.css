@@ -157,39 +157,36 @@ body {
 }
 
 /* Pie de Página */
-.pie-pagina {
-    background-color: #2e1f03;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
 }
 
-.footer-container {
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 0 20px;
 }
 
-.footer-container h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    margin: 10px 0;
+.footer-content p {
+    margin: 0;
 }
 
-.redes-sociales {
+.social-icons {
     display: flex;
-    gap: 20px;
-    justify-content: center;
     align-items: center;
 }
 
-.redes-sociales a img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+.social-icons a img {
+    width: 25px;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+
+.social-icons a img:hover {
+    opacity: 1;
 }
 
 /* Responsividad */
