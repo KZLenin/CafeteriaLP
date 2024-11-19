@@ -195,12 +195,34 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* Configuración del video que aparecerá dentro del index.html */
 .video {
     border: none;
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.video-section {
+    background-color: #f4f4f4;  /* Color de fondo para la sección */
+    padding: 20px;  /* Espaciado alrededor de la sección */
+}
+
+.video-container {
+    display: flex;  /* Usamos flexbox para alinear el video y el párrafo en línea */
+    align-items: center;  /* Alinea verticalmente el contenido */
+    justify-content: space-between;  /* Espacio entre los elementos */
+}
+
+.video {
+    max-width: 100%;  /* Hace que el video se ajuste al contenedor */
+    height: auto;  /* Mantiene la proporción del video */
+}
+
+.video-description {
+    margin-left: 20px;  /* Añade espacio entre el video y el texto */
+    max-width: 400px;  /* Limita el ancho del párrafo para no ocupar demasiado espacio */
 }
 
 /* Configuración del pie de página */
