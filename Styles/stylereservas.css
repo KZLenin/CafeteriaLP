@@ -6,7 +6,7 @@ h2, h3, .menu .navbar ul li a {
 /* Estilos globales para el resto de la página */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif; /* Fuente predeterminada para el resto del contenido */
-    background-image: url('images/bg2.jpg');
+    background-image: url('Sources/bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
