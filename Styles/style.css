@@ -100,42 +100,46 @@ nav ul li a {
 }
 
 /* Configuración del pie de página */
-.pie-pagina {
-    background-color: #2b200e;
-    padding: 20px;
+.footer {
+    background-color: #170404; /* Color de fondo */
+    color: white; /* Color del texto */
     text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-container h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+.footer-section {
+    margin-bottom: 15px;
 }
 
-.redes-sociales {
-    display: flex;
-    gap: 2px;
+/* Estilo para los enlaces */
+.footer-link {
+    color: #dfb7b7;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
-.facebook-icon {
-    width: 60px;
-    height:35px;
-    cursor: pointer;
+.footer-link:hover {
+    text-decoration: underline;
 }
 
-.insta-icon {
-    width: 60px;
+/* Estilo para las imágenes de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
     height: 30px;
-    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.whatsapp-icon {
-    width: 40px;
-    height: 30px;
-    cursor: pointer;
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+    opacity: 0.8; /* Ligero efecto de transparencia */
 }
