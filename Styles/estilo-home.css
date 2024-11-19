@@ -80,11 +80,6 @@ body {
     width: 25px;
 }
 
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
 .header-content {
     text-align: center;
 }
