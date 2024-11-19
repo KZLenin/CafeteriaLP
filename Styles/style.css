@@ -35,7 +35,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #f8e4ed;
     text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ nav ul li a {
 
 .conocenos h2 {
     font-size: 2rem;
-    color: #ffffff;
+    color: #ffe82d;
 }
 
 .sucursales {
@@ -96,7 +96,7 @@ nav ul li a {
 
 .historia h2 {
     font-size: 2rem;
-    color: #ffffff;
+    color: #ffe82d;
 }
 
 /* Configuración del pie de página */
