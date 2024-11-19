@@ -240,6 +240,248 @@ footer {
 
 .social-icons a img:hover {
     opacity: 1;
+}/* Establecer la fuente solo para los encabezados (h2, h3, etc.) */
+h2, h3, .menu .navbar ul li a {
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+}
+
+/* Estilos globales para el resto de la página */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif; /* Fuente predeterminada para el resto del contenido */
+    background-image: url('images/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #FFF;
+}
+
+
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background: rgba(0, 0, 0, 0);
+    padding: auto;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.menu .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    margin-left: 20px;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(180, 158, 162);
+}
+
+/* Sección de Reserva */
+.reserva {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.reserva h2 {
+    font-size: 40px;
+    color: #F9fafc;
+    margin-bottom: 30px;
+}
+
+.reserva h3 {
+    font-size: 28px;
+    color: #E5E5E5;
+    margin-bottom: 20px;
+}
+
+.reserva p {
+    font-size: 18px;
+    color: #C5C5C5;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.reserva ul {
+    font-size: 18px;
+    color: #C5C5C5;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 900px;
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Cambiar color de las viñetas */
+.reserva ul li::marker {
+    color: #e1e1e1; 
+}
+
+.foto-cafe {
+    width: 400px !important;
+    height: 400px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.reserva-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.foto-cafe-contenedor {
+    flex-shrink: 50;
+}
+
+.foto-cafe {
+    width: 180px;
+    height: auto;
+}
+
+/* Sección de Contenido */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 40px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.calendario {
+    width: 45%;
+}
+
+.calendario h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendario table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.calendario th,
+.calendario td {
+    padding: 15px;
+    border: 1px solid #1a1a1a;
+    color: #d1d1d1;
+}
+
+.calendario th {
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.calendario td {
+    background-color: #000000;
+}
+
+.titulocalen{
+    color: #000000;
+}
+
+/* Opiniones */
+.opiniones {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.opiniones-cuadro {
+    color: #FFF;
+}
+
+.opiniones-cuadro h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.opiniones-cuadro p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a img {
+    width: 25px;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+
+.social-icons a img:hover {
+    opacity: 1;
 }
 
 
