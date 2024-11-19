@@ -44,9 +44,10 @@ body {
     height: 70px;
 }
 
+/*Añadir las dimensiones de la imagen*/
 .logo img {
-    width: 80px;
-    height: 50px;
+    width: 90px;
+    height: 55px;
     padding-top: 15px;
     padding-left: 80px;
 }
@@ -91,7 +92,7 @@ body {
 .header-content h1 {
     font-size: 60px;
     line-height: 80px;
-    color: #F9fafc;
+    color: #f9decc;
     text-transform: uppercase;
     margin-top: 39px;
     margin-bottom: 5px;
@@ -101,7 +102,7 @@ body {
 }
 
 .header-content p {
-    font-size: 20px;
+    font-size: 23px;
     color: #C5C5C5;
     padding: 0 250px;
     margin-bottom: 25px;
@@ -125,9 +126,11 @@ body {
     background-color: rgb(183, 120, 120);
 }
 
+/* Estilos generales para la sección de café */
+
 .coffee {
     padding: 100px 0;
-    background-color: #fafaea;
+    background-color: #fff3f5;
     position: relative;
 }
 
@@ -138,133 +141,178 @@ body {
 .coffee-content h2 {
     font-size: 45px;
     line-height: 70px;
-    color: #323337;
+    color: #bb5656; /* Color del título principal */
     text-transform: uppercase;
     padding: 0 150px;
     margin-bottom: 10px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .txt-parrafo {
-    font-size: 20px;
-    color: #1d2638;
+    font-size: 23px;
+    color: #111b30; /* Color del párrafo principal */
     padding: 0 250px;
     margin-bottom: 35px;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
+/* Grupo de divs: Separación y alineación */
 .coffee-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    gap: 5px; /* Reducir espacio entre divs */
+    margin-top: 50px; /* Separar del margen superior */
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
+/* Estilo para cada div */
 .coffee-1 {
-    padding: 25px;
+    position: relative; /* Posicionamiento del contenido interno */
+    width: 350px; /* Ancho fijo para un mejor diseño */
+    padding: 20px;
+    overflow: hidden; /* Ocultar contenido que sobresalga */
+    border-radius: 10px;
+    background-color: #f6e2e2; /* Fondo de los divs */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Para centrar imagen y contenido */
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: space-between; /* Espaciar contenido */
 }
 
+/* Estilo para las imágenes */
 .coffee-1 img {
-    width: 300px;
-    height: 220px;
-    transition: transform 1.3s ease-in-out;
+    width: 350px; /* Ajustar tamaño */
+    height: 250px;
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+    border-radius: 5px; /* Opcional: bordes redondeados */
 }
 
-.cofee-1 img:hover {
-    transform: translateY(-10px);
-}
-
-.coffee-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.coffee-1 h3 {
-    color: rgb(89, 14, 14);
+/* Títulos dentro de los divs */
+.coffee-1 .titulo-bebida {
+    color: #772026; /* Color de los títulos */
     font-size: 20px;
     margin-top: 15px;
-    margin-bottom: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.coffee-1 p {
-    color: black;
-    font-size: 18px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-/* Configuración del video que aparecerá dentro del index.html */
-.video-section {
-    background-color: #ffccd1;  /* Color de fondo para la sección */
-    padding: 20px;  /* Espaciado alrededor de la sección */
-}
-
-.video-title {
-    text-align: center;  /* Centra el título */
-    font-size: 25px;  /* Tamaño de la fuente del título */
-    margin-bottom: 20px;  /* Espaciado debajo del título */
-    color: #8c0005;
-    font-family: Arial;
-}
-
-.video-container {
-    display: flex;  /* Alinear el video y el párrafo en línea */
-    align-items: center;  /* Alinea verticalmente el contenido */
-    justify-content: space-between;  /* Espacio entre los elementos */
-}
-
-.video {
-    max-width: 100%;  /* Hace que el video se ajuste al contenedor */
-    height: auto;  /* Mantiene la proporción del video */
-}
-
-.video-description {
-    margin-left: 20px;  /* Añade espacio entre el video y el texto */
-    max-width: 400px;  /* Limita el ancho del párrafo para no ocupar demasiado espacio */
-}
-
-/* Configuración del pie de página */
-.pie-pagina {
-    background-color: #2e1f03;
-    padding: 20px;
+    margin-bottom: 10px;
+    font-family: Verdana;
     text-align: center;
 }
 
+/* Texto dentro de los divs */
+.coffee-1 .texto-bebida {
+    color: #2e0909;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+/* Configuración del video que aparecerá dentro del index.html */
+/* La sección que contiene el video y el texto */
+.video-section {
+    position: relative;  /* Necesario para poder posicionar el texto sobre el video */
+    height: 100vh;  /* Establece la altura de la sección al 100% de la ventana */
+    overflow: hidden;  /* Asegura que el video no se desborde si cambia su tamaño */
+}
+
+/* El video como fondo */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container::before {
+    content: '';  /* Crea una capa vacía */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Fondo negro con opacidad */
+    z-index: 1;  /* Pone la capa oscura encima del video */
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;  /* Asegura que el video esté debajo de la capa oscura */
+}
+
+/* Estilo para el título */
+.video-title {
+    position: absolute;
+    top: 40%;  /* Coloca el título ligeramente más arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centra el título */
+    color: #e2bbb7;  /* Color dorado para el título */
+    font-size: 40px;  /* Tamaño de fuente para el título */
+    font-family: verdana;
+    text-align: center;
+    z-index: 2;  /* Asegura que el título quede encima de todo */
+}
+
+/* Estilo para la descripción */
+.video-description {
+    position: absolute;
+    top: 55%;  /* Coloca la descripción un poco más abajo que el título */
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);  /* Centra la descripción */
+    color: rgb(231, 216, 216);  /* Color blanco para la descripción */
+    font-size: 23px;  /* Tamaño de fuente para la descripción */
+    text-align: center;
+    font-family: Verdana;
+    z-index: 2;  /* Asegura que la descripción quede encima de la capa oscura */
+}
+
+/* Configuración del pie de página */
+.footer {
+    background-color: #170404; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
+}
+
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-container h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+.footer-section {
+    margin-bottom: 15px;
 }
 
-.redes-sociales {
-    display: flex;
-    gap: 2px;
+/* Estilo para los enlaces */
+.footer-link {
+    color: #dfb7b7;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
-.facebook-icon {
-    width: 60px;
-    height:35px;
-    cursor: pointer;
+.footer-link:hover {
+    text-decoration: underline;
 }
 
-.insta-icon {
-    width: 60px;
+/* Estilo para las imágenes de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
     height: 30px;
-    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.whatsapp-icon {
-    width: 40px;
-    height: 30px;
-    cursor: pointer;
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+    opacity: 0.8; /* Ligero efecto de transparencia */
 }
+
 /* Sucursal: Responsivizar los iframe */
 .sucursal {
     position: relative;
