@@ -451,37 +451,93 @@ header {
     font-style: italic;
 }
 
-/* Footer */
-footer {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    color: #FFF;
-    font-size: 14px;
+/* Configuración del pie de página */
+.footer {
+    background-color: #170404; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-content p {
-    margin: 0;
+.footer-section {
+    margin-bottom: 15px;
 }
 
-.social-icons {
-    display: flex;
-    align-items: center;
+/* Estilo para los enlaces */
+.footer-link {
+    color: #dfb7b7;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
-.social-icons a img {
-    width: 25px;
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las imágenes de redes sociales */
+.social-icons a {
     margin: 0 10px;
-    opacity: 0.8;
 }
 
-.social-icons a img:hover {
-    opacity: 1;
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+    opacity: 0.8; /* Ligero efecto de transparencia */
+}
+/* Configuración del pie de página */
+.footer {
+    background-color: #170404; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los enlaces */
+.footer-link {
+    color: #dfb7b7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las imágenes de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+    opacity: 0.8; /* Ligero efecto de transparencia */
 }
 
 
