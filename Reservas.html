@@ -92,7 +92,27 @@
 
     <!--Pie de pagina-->
 <footer class="footer">
+    
+    
     <div class="footer-container">
+        <h1 class="footer-title">CONTACTOS</h1>
+        <p>Envíame un email o sigueme en mis redes sociales. Estaré gustosa de hablar contigo
+            y responder tus dudas.
+        </p>
+
+        <div class="footer-section"> 
+            <form action="mailto:tuemail@example.com" method="post" enctype="text/plain"> 
+                <label for="name">Nombre:</label> 
+                <input type="text" id="name" name="name" required><br> 
+                
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required><br> 
+                
+                <label for="message">Mensaje:</label> 
+                <textarea id="message" name="message" rows="4" required></textarea><br> 
+                <input type="submit" value="Enviar Mensaje"> 
+        </form>
+            
         <!-- Políticas y Términos -->
         <div class="footer-section">
             <a href="#" class="footer-link">Políticas de Privacidad</a> |
