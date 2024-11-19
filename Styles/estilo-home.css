@@ -195,6 +195,14 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.video {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Configuración del pie de página */
 .pie-pagina {
     background-color: #2e1f03;
