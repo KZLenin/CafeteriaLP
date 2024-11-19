@@ -1,20 +1,26 @@
-/* Estilos globales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+/* Establecer la fuente solo para los encabezados (h2, h3, etc.) */
+h2, h3, .menu .navbar ul li a {
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
 }
 
+/* Estilos globales para el resto de la página */
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    background-image: url('https://i.ibb.co/RPgZtzR/bg2.jpg');
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif; /* Fuente predeterminada para el resto del contenido */
+    background-image: url('images/bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
     color: #FFF;
+}
+
+
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Contenedor principal */
@@ -26,7 +32,7 @@ body {
 /* Encabezado */
 header {
     background: rgba(0, 0, 0, 0);
-    padding: 20px;
+    padding: auto;
     color: #fff;
 }
 
@@ -42,6 +48,7 @@ header {
 
 .menu .navbar ul {
     display: flex;
+    list-style: none;
 }
 
 .menu .navbar ul li {
@@ -51,7 +58,7 @@ header {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 10px;
-    color: rgb(144, 114, 81);
+    color: rgb(0, 0, 0);
     font-weight: 600;
     text-decoration: none;
 }
@@ -66,37 +73,51 @@ header {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .reserva h2 {
-    font-size: 35px;
+    font-size: 40px;
     color: #F9fafc;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .reserva h3 {
     font-size: 28px;
     color: #E5E5E5;
+    margin-bottom: 20px;
 }
 
-.reserva p,
+.reserva p {
+    font-size: 18px;
+    color: #C5C5C5;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
 .reserva ul {
     font-size: 18px;
     color: #C5C5C5;
     text-align: left;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Cambiar color de las viñetas */
+.reserva ul li::marker {
+    color: #e1e1e1; 
 }
 
 .foto-cafe {
-    width: 400px !important;   /* Ancho de la imagen */
-    height: 400px !important;  /* Alto de la imagen */
-    object-fit: cover;  /* Asegura que la imagen se ajuste sin distorsionarse */
+    width: 400px !important;
+    height: 400px !important;
+    object-fit: cover;
     border-radius: 10px;
     margin-top: 20px;
 }
-
 
 .reserva-contenido {
     display: flex;
@@ -123,7 +144,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    padding: 0 20px; 
+    padding: 0 40px;
     margin-bottom: 30px;
     height: auto;
 }
@@ -147,18 +168,22 @@ header {
 .calendario th,
 .calendario td {
     padding: 15px;
-    border: 1px solid #ddd;
-    color: #333;
+    border: 1px solid #1a1a1a;
+    color: #d1d1d1;
 }
 
 .calendario th {
-    background-color: #F5F5F5;
+    background-color: #000000;
+    border: 1px solid #000000;
 }
 
 .calendario td {
-    background-color: #FFF;
+    background-color: #000000;
 }
 
+.titulocalen{
+    color: #000000;
+}
 
 /* Opiniones */
 .opiniones {
@@ -184,49 +209,37 @@ header {
     font-style: italic;
 }
 
-/* Configuración del pie de página */
-.footer {
-    background-color: #170404; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-align: center;
-    padding: 20px 0;
-    font-family: Verdana;
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-section {
-    margin-bottom: 15px;
+.footer-content p {
+    margin: 0;
 }
 
-/* Estilo para los enlaces */
-.footer-link {
-    color: #dfb7b7;
-    text-decoration: none;
-    margin: 0 5px;
+.social-icons {
+    display: flex;
+    align-items: center;
 }
 
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para las imágenes de redes sociales */
-.social-icons a {
+.social-icons a img {
+    width: 25px;
     margin: 0 10px;
+    opacity: 0.8;
 }
 
-.social-icon {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
-    opacity: 0.8; /* Ligero efecto de transparencia */
+.social-icons a img:hover {
+    opacity: 1;
 }
 
 
