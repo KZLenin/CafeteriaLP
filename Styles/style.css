@@ -1,4 +1,4 @@
-/* General Styles */
+/* estilos generales*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,13 +30,21 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
     padding-right: 25px;
 }
 
 nav ul li a {
-    color: #f8e4ed;
+    color: #ffe82d;
     text-decoration: none;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: hsl(55, 92%, 33%);
+    cursor: pointer;
 }
 
 .conocenos {
@@ -48,6 +56,13 @@ nav ul li a {
 .conocenos h2 {
     font-size: 2rem;
     color: #ffe82d;
+}
+
+.conocenos-p {
+    font-size: 20px;
+    color: white;
+    font-family: Verdana;
+    line-height: 1.5;
 }
 
 .sucursales {
@@ -78,6 +93,7 @@ nav ul li a {
 .sucursal button {
     background-color: #ffd700;
     color: #000;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
