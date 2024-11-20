@@ -1,456 +1,284 @@
-/* Establecer la fuente solo para los encabezados (h2, h3, etc.) */
-h2, h3, .menu .navbar ul li a {
-    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
-}
-
-/* Estilos globales para el resto de la página */
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif; /* Fuente predeterminada para el resto del contenido */
-    background-image: url('Sources/bg2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    color: #FFF;
-}
-
-
-/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: none;
+    list-style: none
 }
 
-/* Contenedor principal */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Encabezado */
-header {
-    background: rgba(0, 0, 0, 0);
-    padding: auto;
-    color: #fff;
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/30/5c/29/photo0jpg.jpg) center bottom no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
 }
 
-.menu {
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo img {
+.logo {
+    color: white;
+    font-size: 65px;
+    font-weight: 800;
+    width: 50px;
     height: 70px;
 }
 
-.menu .navbar ul {
-    display: flex;
-    list-style: none;
+/*Añadir las dimensiones de la imagen*/
+.logo img {
+    width: 90px;
+    height: 55px;
+    padding-top: 15px;
+    padding-left: 80px;
 }
 
 .menu .navbar ul li {
-    margin-left: 20px;
+    position: relative;
+    float: left;
 }
 
 .menu .navbar ul li a {
     font-size: 18px;
-    padding: 10px;
-    color: rgb(0, 0, 0);
+    padding: 30px;
+    color: rgb(239, 205, 191);
+    display: block;
     font-weight: 600;
     text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .menu .navbar ul li a:hover {
     color: rgb(180, 158, 162);
 }
 
-/* Sección de Reserva */
-.reserva {
-    padding: 50px 20px;
+.header-content {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    margin-top: 25px;
 }
 
-.reserva h2 {
+.header-content h1 {
     font-size: 40px;
-    color: #F9fafc;
-    margin-bottom: 30px;
-}
-
-.reserva h3 {
-    font-size: 28px;
-    color: #E5E5E5;
-    margin-bottom: 20px;
-}
-
-.reserva p {
-    font-size: 18px;
-    color: #C5C5C5;
+    line-height: 80px;
+    color: #f9decc;
+    text-transform: uppercase;
+    margin-top: 39px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 0 auto;
-    max-width: 900px;
 }
 
-.reserva ul {
-    font-size: 18px;
+.header-content p {
+    font-size: 23px;
     color: #C5C5C5;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 900px;
-    list-style-type: square;
-    padding-left: 20px;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    text-align: center;
 }
 
-/* Cambiar color de las viñetas */
-.reserva ul li::marker {
-    color: #e1e1e1; 
-}
-
-.foto-cafe {
-    width: 400px !important;
-    height: 400px !important;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.reserva-contenido {
+/* Banner section */
+.banner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    background-color: #fff1e8;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.texto {
-    flex: 1;
+.banner-content {
+    max-width: 60%;
 }
 
-.foto-cafe-contenedor {
-    flex-shrink: 50;
-}
-
-.foto-cafe {
-    width: 180px;
-    height: auto;
-}
-
-/* Sección de Contenido */
-.contenido {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    padding: 0 40px;
-    margin-bottom: 30px;
-    height: auto;
-}
-
-.calendario {
-    width: 45%;
-}
-
-.calendario h3 {
+.banner-content h2 {
+    color: #582309;
+    font-family: Verdana;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.calendario table {
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    font-size: 20px;
+.banner-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    margin-left: 15px;
+    font-family: Verdana;
 }
 
-.calendario th,
-.calendario td {
+.banner-image img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parrafo-content{
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reservas-title {
+    color: #7c3d12;
+    font-family: Verdana;
+    margin-bottom: 1cap;
+    text-align: center;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+label {
+    font-weight: bold;
+    font-family: Verdana;
+    padding-left: 35px;
+}
+
+input, select, textarea, button {
+    font-size: 12px;
+    padding: 0.5rem;
+    padding-left: 5px;
+    border: 1px solid #6a6767;
+    border-radius: 5px;
+    font-family: Verdana;
+}
+
+button {
+    background-color: #702e0a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8a6a52;
+}
+
+.opiniones-content {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna (título arriba, opiniones abajo) */
+    align-items: center; /* Centra todos los elementos horizontalmente */
+    margin-bottom: 25px;
+    background-color: rgb(255, 254, 238);
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 10px;
+}
+
+.opiniones-title {
+    font-family: Verdana;
+    font-weight: bold;
+    color: rgb(100, 18, 18);
+    margin-bottom: 15px; /* Espacio entre el título y las opiniones */
+    text-align: center;
+}
+
+.opiniones-list {
+    display: flex; /* Muestra las opiniones en fila horizontal */
+    justify-content: space-between; /* Distribuye el espacio entre las opiniones */
+    gap: 20px; /* Controla el espacio entre cada opinión */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto dentro de cada opinión */
+}
+
+.opiniones-p {
+    font-family: Verdana;
+    width: 30%; /* Limita el ancho de cada opinión para que se distribuyan en línea */
+    text-align: center;
+    line-height: 1.5;  /*Ajustar el interlineado*/
     padding: 15px;
-    border: 1px solid #1a1a1a;
-    color: #d1d1d1;
+    background-color: rgb(255, 250, 233);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
 }
 
-.calendario th {
-    background-color: #000000;
-    border: 1px solid #000000;
+.pago-content {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna (título arriba, opiniones abajo) */
+    align-items: center; /* Centra todos los elementos horizontalmente */
+    margin-bottom: 25px;
+    background-color: rgb(255, 249, 220);
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 10px;
 }
 
-.calendario td {
-    background-color: #000000;
+.pago-title {
+    font-family: Verdana;
+    font-weight: bold;
+    color: rgb(100, 18, 18);
+    margin-bottom: 15px; /* Espacio entre el título y las opiniones */
+    text-align: center;
 }
 
-.titulocalen{
-    color: #000000;
+.pago-list {
+    display: flex; /* Muestra las opiniones en fila horizontal */
+    justify-content: space-between; /* Distribuye el espacio entre las opiniones */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto dentro de cada opinión */
 }
 
-/* Opiniones */
-.opiniones {
-    width: 45%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+.pago-p {
+    font-family: Verdana;
+    width: 30%; /* Limita el ancho de cada opinión para que se distribuyan en línea */
+    text-align: center;
+    line-height: 1.5;  /*Ajustar el interlineado*/
+    padding: 15px;
+    background-color: rgb(239, 245, 250);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
 }
 
-.opiniones-cuadro {
-    color: #FFF;
-}
-
-.opiniones-cuadro h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.opiniones-cuadro p {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-style: italic;
+.pago-img{
+    width: 360px;
+    height: 130px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
 }
 
 /* Footer */
-footer {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    color: #FFF;
-    font-size: 14px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-content p {
-    margin: 0;
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-}
-
-.social-icons a img {
-    width: 25px;
-    margin: 0 10px;
-    opacity: 0.8;
-}
-
-.social-icons a img:hover {
-    opacity: 1;
-}/* Establecer la fuente solo para los encabezados (h2, h3, etc.) */
-h2, h3, .menu .navbar ul li a {
-    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
-}
-
-/* Estilos globales para el resto de la página */
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif; /* Fuente predeterminada para el resto del contenido */
-    background-image: url('images/bg2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    color: #FFF;
-}
-
-
-/* Estilos globales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Contenedor principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Encabezado */
-header {
-    background: rgba(0, 0, 0, 0);
-    padding: auto;
-    color: #fff;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo img {
-    height: 70px;
-}
-
-.menu .navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.menu .navbar ul li {
-    margin-left: 20px;
-}
-
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.menu .navbar ul li a:hover {
-    color: rgb(180, 158, 162);
-}
-
-/* Sección de Reserva */
-.reserva {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    margin-top: 25px;
-}
-
-.reserva h2 {
-    font-size: 40px;
-    color: #F9fafc;
-    margin-bottom: 30px;
-}
-
-.reserva h3 {
-    font-size: 28px;
-    color: #E5E5E5;
-    margin-bottom: 20px;
-}
-
-.reserva p {
-    font-size: 18px;
-    color: #C5C5C5;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 900px;
-}
-
-.reserva ul {
-    font-size: 18px;
-    color: #C5C5C5;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 900px;
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-/* Cambiar color de las viñetas */
-.reserva ul li::marker {
-    color: #e1e1e1; 
-}
-
-.foto-cafe {
-    width: 400px !important;
-    height: 400px !important;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.reserva-contenido {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.texto {
-    flex: 1;
-}
-
-.foto-cafe-contenedor {
-    flex-shrink: 50;
-}
-
-.foto-cafe {
-    width: 180px;
-    height: auto;
-}
-
-/* Sección de Contenido */
-.contenido {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    padding: 0 40px;
-    margin-bottom: 30px;
-    height: auto;
-}
-
-.calendario {
-    width: 45%;
-}
-
-.calendario h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.calendario table {
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    font-size: 20px;
-}
-
-.calendario th,
-.calendario td {
-    padding: 15px;
-    border: 1px solid #1a1a1a;
-    color: #d1d1d1;
-}
-
-.calendario th {
-    background-color: #000000;
-    border: 1px solid #000000;
-}
-
-.calendario td {
-    background-color: #000000;
-}
-
-.titulocalen{
-    color: #000000;
-}
-
-/* Opiniones */
-.opiniones {
-    width: 45%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
-
-.opiniones-cuadro {
-    color: #FFF;
-}
-
-.opiniones-cuadro h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.opiniones-cuadro p {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
 /* Configuración del pie de página */
 .footer {
     background-color: #170404; /* Color de fondo */
@@ -469,81 +297,6 @@ header {
     margin-bottom: 15px;
 }
 
-/* Estilo para los enlaces */
-.footer-link {
-    color: #dfb7b7;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para las imágenes de redes sociales */
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
-    opacity: 0.8; /* Ligero efecto de transparencia */
-}
-/* Configuración del pie de página */
-.footer {
-    background-color: #170404; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-align: center;
-    padding: 20px 0;
-    font-family: Verdana;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-title{
-    font-family: Verdana;
-    color: rgb(241, 218, 222);
-}
-.footer-section {
-    margin-bottom: 15px;
-}
-
-.footer-section form { display: flex; 
-    flex-direction: column; 
-    align-items: center; } 
-    
-.footer-section form label { margin-bottom: 5px; 
-    font-weight: bold; } 
-
-.footer-section form input, 
-.footer-section form textarea { width: 100%; 
-    max-width: 400px; 
-    padding: 10px; 
-    margin-bottom: 10px; 
-    border: 1px solid #ddd; 
-    border-radius: 5px; } 
-
-.footer-section form input[type="submit"] { width: auto; 
-    background-color: #70270a; 
-    color: #fff; border: none; 
-    border-radius: 5px; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-} 
-    
-.footer-section form input[type="submit"]:hover 
-{ background-color: #af6088;}
 /* Estilo para los enlaces */
 .footer-link {
     color: #dfb7b7;
