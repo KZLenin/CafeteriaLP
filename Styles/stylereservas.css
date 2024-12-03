@@ -1,241 +1,277 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: none;
-    list-style: none
-}
-
+/* Estilo global */
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular';
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/30/5c/29/photo0jpg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fafafa;
+    margin: 0;
+    line-height: 1.6;
 }
 
 .container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    border-radius: 10%;
 }
 
-.header {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)),
-        url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/30/5c/29/photo0jpg.jpg) center bottom no-repeat;
-    background-size: cover;
-    background-position: center 20%;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-}
+/* Estilo global para el header */
 
-.menu{
-    position: absolute;
+
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
     top: 0;
-    left: 0;
-    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
     display: flex;
-    align-items: center;
+}
+ .abrir-menu,
+ .cerrar-menu {
+    display: none;
+ }
+
+ @media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #5b5b5b;
+    }
+
+    .cerrar-menu {
+        color: #c8c8c8;
+    }
+
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #010101ae;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+
+    }
+
+    .nav-listli a {
+        color: #c8c8c8;
+    }
+    
+ }
+
+
+
+
+.menu {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    color: white;
-    font-size: 65px;
-    font-weight: 800;
-    width: 50px;
-    height: 70px;
-}
-
-/*Añadir las dimensiones de la imagen*/
 .logo img {
-    width: 90px;
-    height: 55px;
-    padding-top: 15px;
-    padding-left: 80px;
+    height: 70px;
+    transition: transform 0.3s;
 }
 
-.menu .navbar ul li {
-    position: relative;
-    float: left;
+.logo img:hover {
+    transform: scale(1.1);
 }
 
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 30px;
-    color: rgb(239, 205, 191);
-    display: block;
-    font-weight: 600;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-}
 
-.menu .navbar ul li a:hover {
-    color: rgb(180, 158, 162);
-}
-
-.header-content {
-    text-align: center;
-}
-
-.header-content h1 {
-    font-size: 40px;
-    line-height: 80px;
-    color: #f9decc;
-    text-transform: uppercase;
-    margin-top: 39px;
-    margin-bottom: 5px;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.header-content p {
-    font-size: 23px;
-    color: #C5C5C5;
-    padding: 0 250px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    text-align: center;
-}
-
-/* Banner section */
-.banner {
+.nav-list {
+    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff1e8;
-    padding: 1.5rem;
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
 }
 
-.banner-content {
-    max-width: 60%;
+.nav-list li a {
+    text-decoration: none;
+    color: #fafafa;
 }
 
-.banner-content h2 {
-    color: #582309;
-    font-family: Verdana;
-    text-align: center;
-}
 
-.banner-content p {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: black;
-    margin-left: 15px;
-    font-family: Verdana;
-}
+
+/* Estilo de la sección reserva */
 
 .banner-image img {
+    display: flex;
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.parrafo-content{
-    text-align: center;
-    padding: 25px;
-}
 
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 2rem auto;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.reservas-title {
-    color: #7c3d12;
-    font-family: Verdana;
-    margin-bottom: 1cap;
-    text-align: center;
-}
-
-/* Form */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-label {
-    font-weight: bold;
-    font-family: Verdana;
-    padding-left: 35px;
-}
-
-input, select, textarea, button {
-    font-size: 12px;
-    padding: 0.5rem;
-    padding-left: 5px;
-    border: 1px solid #6a6767;
-    border-radius: 5px;
-    font-family: Verdana;
-}
-
-button {
-    background-color: #702e0a;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #8a6a52;
-}
-
-.opiniones-content {
-    display: flex;
-    flex-direction: column; /* Organiza los elementos en columna (título arriba, opiniones abajo) */
-    align-items: center; /* Centra todos los elementos horizontalmente */
-    margin-bottom: 25px;
-    background-color: rgb(255, 254, 238);
-    padding: 25px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 35px;
-    margin-right: 35px;
+.reserva {
+    text-align: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 20px;
     border-radius: 10px;
+
 }
 
-.opiniones-title {
-    font-family: Verdana;
+.reserva-contenido {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.texto {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.texto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.texto h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.texto ul {
+    padding-left: 20px;
+}
+
+.texto ul li {
+    margin-bottom: 10px;
+}
+
+.parrafo-content{
+    text-align: auto;
+    padding: auto;
+}
+
+.foto-cafe {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Estilo de la sección reservas */
+.reservas-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: auto;
+}
+
+.reservas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-right: 20px;
+
+}
+
+.reservas-image {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.reservas-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(8, 8, 8, 0.1);
+}
+
+.reservas-form {
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.reservas-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #c8c8c8;
+    text-align: center;
+}
+
+.reservas-form label {
+    display: block;
     font-weight: bold;
-    color: rgb(100, 18, 18);
-    margin-bottom: 15px; /* Espacio entre el título y las opiniones */
-    text-align: center;
+    margin-bottom: 5px;
+    color: #fffcfc;
 }
 
-.opiniones-list {
-    display: flex; /* Muestra las opiniones en fila horizontal */
-    justify-content: space-between; /* Distribuye el espacio entre las opiniones */
-    gap: 20px; /* Controla el espacio entre cada opinión */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    text-align: center; /* Centra el texto dentro de cada opinión */
+.reservas-form input,
+.reservas-form textarea,
+.reservas-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    background: #ffffff3f;
+    color: #ffffff;
 }
 
-.opiniones-p {
-    font-family: Verdana;
-    width: 30%; /* Limita el ancho de cada opinión para que se distribuyan en línea */
-    text-align: center;
-    line-height: 1.5;  /*Ajustar el interlineado*/
-    padding: 15px;
-    background-color: rgb(255, 250, 233);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    border-radius: 5%;
+.reservas-form button {
+    background-color: #b75825;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+    font-size: 20px;
 }
 
+.reservas-form button:hover {
+    background-color: #ff9543;
+}
+
+
+/*Seccion de pagos*/
 .pago-content {
     display: flex;
     flex-direction: column; /* Organiza los elementos en columna (título arriba, opiniones abajo) */
     align-items: center; /* Centra todos los elementos horizontalmente */
     margin-bottom: 25px;
-    background-color: rgb(255, 249, 220);
+    background-color: rgba(255, 249, 220, 0);
     padding: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-left: 35px;
@@ -246,7 +282,7 @@ button:hover {
 .pago-title {
     font-family: Verdana;
     font-weight: bold;
-    color: rgb(100, 18, 18);
+    color: rgb(195, 195, 195);
     margin-bottom: 15px; /* Espacio entre el título y las opiniones */
     text-align: center;
 }
@@ -260,70 +296,127 @@ button:hover {
 
 .pago-p {
     font-family: Verdana;
-    width: 30%; /* Limita el ancho de cada opinión para que se distribuyan en línea */
+    flex: 1; /* Permite que las secciones se expandan proporcionalmente */
+    min-width: 200px; /* Define un tamaño mínimo para evitar que las secciones sean demasiado pequeñas */
+    max-width: 30%; /* Ajusta el ancho máximo por sección */
     text-align: center;
-    line-height: 1.5;  /*Ajustar el interlineado*/
+    line-height: 1.5; /* Ajusta el interlineado */
     padding: 15px;
-    background-color: rgb(239, 245, 250);
+    background-color: rgba(2, 2, 2, 0.589);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 5%;
 }
 
-.pago-img{
-    width: 360px;
-    height: 130px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
+@media (max-width: 768px) {
+    .pago-list {
+        flex-direction: column; /* Cambia las secciones a una columna */
+        align-items: center; /* Centra las secciones */
+    }
+
+    .pago-p {
+        max-width: 90%; /* Asegura que cada sección ocupe casi todo el ancho disponible */
+        margin-bottom: 15px; /* Espacio entre secciones */
+    }
 }
 
-/* Footer */
-/* Configuración del pie de página */
-.footer {
-    background-color: #170404; /* Color de fondo */
-    color: white; /* Color del texto */
+
+.pago-img {
+    width: 100%; /* La imagen ocupará el ancho completo del contenedor padre */
+    max-width: 360px; /* Limita el ancho máximo para evitar que crezca demasiado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: auto; /* Centra la imagen horizontalmente */
+    border-radius: 5px; /* Mantiene las esquinas redondeadas */
+}
+
+
+
+/* Estilo de opiniones */
+.opiniones {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0px;
+    margin-top: 20px;
+    border-radius: 10px;
     text-align: center;
-    padding: 20px 0;
-    font-family: Verdana;
+    color: #fff;
+}
+
+.opiniones h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.opiniones-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.comentario {
+    background-color: rgba(199, 197, 197, 0.9);
+    color: #000;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    position: relative;
+    animation: aleatorio 10s infinite ease-in-out;
+}
+
+/* Animación de posicionamiento aleatorio */
+@keyframes aleatorio {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -15px);
+    }
+    50% {
+        transform: translate(-20px, 10px);
+    }
+    75% {
+        transform: translate(15px, -10px);
+    }
+}
+
+.comentario p {
+    margin: 0;
+}
+
+
+/* Estilo del footer */
+footer {
+    background: #00000097;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.footer-section {
-    margin-bottom: 15px;
+
+.social-icons {
+    margin-top: 20px;
 }
 
-/* Estilo para los enlaces */
-.footer-link {
-    color: #dfb7b7;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para las imágenes de redes sociales */
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icon {
+.social-icons img {
     width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin: 0 10px;
+    transition: transform 0.3s;
 }
 
-.social-icon:hover {
-    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
-    opacity: 0.8; /* Ligero efecto de transparencia */
+.social-icons img:hover {
+    transform: scale(1.1);
 }
-
 
 
 
