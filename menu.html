@@ -6,6 +6,7 @@
     <title>HELD COFFEE SHOP</title>
     <link rel="icon" href="Sources\logo.png">
     <link rel="stylesheet" href="Styles\menuStyle.css">
+
 </head>
 <body>
     <header class = "header">
@@ -29,30 +30,54 @@
         <div class="menu-section">
             <h2>Desayunos</h2>
             <div class="menu-items">
-                <div class="item">
-                    <img src="Sources\aleman-final.jpg" alt="Desayuno 1">
-                    <h3>Desayuno Alemán</h3>
-                    <p>Salchicha Ranchera + Huevos con jamón + Tostada mixta (jamón y queso) + Jugo + Cappuccino.</p>
-                    <button>Ver Más</button>
+                <div class="menu-items slider">
+                    <div class="item">
+                        <img src="Sources\aleman-final.jpg" alt="Desayuno 1">
+                        <h3>Desayuno Alemán</h3>
+                        <p>Salchicha Ranchera + Huevos con jamón + Tostada mixta (jamón y queso) + Jugo + Cappuccino.</p>
+                        <span class="price">$7.50</span>
+                        <button class="add-to-cart" data-name="Desayuno Alemán" data-price="7.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources\pancake.jpg" alt="Desayuno 2">
+                        <h3>Desayuno Pancake</h3>
+                        <p>3 Pancakes + Miel de Maple + Huevos con jamón + Yogurt Frutos Rojos + Jugo + Cappuccino.</p>
+                        <span class="price">$7.50</span>
+                        <button class="add-to-cart" data-name="Desayuno Pancake" data-price="7.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources\espigal.jpg" alt="Desayuno 3">
+                        <h3>Desayuno Espigal</h3>
+                        <p>Huevos con Tocino + Tostada mixta (jamón y queso) + Yogurt Frutos Rojos + Jugo + Cappuccino.</p>
+                        <span class="price">$8.50</span>
+                        <button class="add-to-cart" data-name="Desayuno Espigal" data-price="8.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources\tradicional.jpg" alt="Desayuno 4">
+                        <h3>Desayuno Tradicional</h3>
+                        <p>Sanduche (Jamón y Queso) + Huevos + Jugo + Café.</p>
+                        <span class="price">$6.50</span>
+                        <button class="add-to-cart" data-name="Desayuno Tradicional" data-price="6.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/ambateño.jpg" alt="Desayuno 5">
+                        <h3>Desayuno Ambateño</h3>
+                        <p>Tostada mixta (jamón y queso) + Huevos + Jugo + Chocolate.</p>
+                        <span class="price">$4.99</span>
+                        <button class="add-to-cart" data-name="Desayuno Ambateño" data-price="4.99">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/ligth.jpg" alt="Desayuno 6">
+                        <h3>Desayuno Light</h3>
+                        <p>4 Tostada con Mantequilla y Mermelada + Jugo + Café.</p>
+                        <span class="price">$4.99</span>
+                        <button class="add-to-cart" data-name="Desayuno Light" data-price="4.99">Ordenar</button>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="Sources\pancake.jpg" alt="Desayuno 2">
-                    <h3>Desayuno Pancake</h3>
-                    <p>3 Pancakes + Miel de Maple + Huevos con jamón + Yogurt Frutos Rojos + Jugo + Cappuccino.</p>
-                    <button>Ver Más</button>
-                </div>
-                <div class="item">
-                    <img src="Sources\espigal.jpg" alt="Desayuno 3">
-                    <h3>Desayuno Espigal</h3>
-                    <p>Huevos con Tocino + Tostada mixta (jamón y queso) + Yogurt Frutos Rojos + Jugo + Cappuccino.</p>
-                    <button>Ver Más</button>
-                </div>
-                <div class="item">
-                    <img src="Sources\tradicional.jpg" alt="Desayuno 4">
-                    <h3>Desayuno Tradicional</h3>
-                    <p>Sanduche (Jamón y Queso) + Huevos + Jugo + Café.</p>
-                    <button>Ver Más</button>
-                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
             </div>
         </div>
 
@@ -60,34 +85,93 @@
         <div class="banner-img">
             <img src="Sources\1.jpg" alt="Banner de Menú">
         </div>
-
+        
         <div class="menu-section">
             <h2>Bebidas</h2>
             <div class="menu-items">
-                <div class="item">
-                    <img src="Sources\cafeleche.jpg" alt="Bebida 1">
-                    <h3>Café Espresso</h3>
-                    <p>Café concentrado, fuerte y aromático</p>
-                    <button>Ver Más</button>
+                <div class="menu-items slider">
+                    <div class="item">
+                        <img src="Sources\cafeleche.jpg" alt="Bebida 1">
+                        <h3>Café Espresso</h3>
+                        <p>Café concentrado, fuerte y aromático</p>
+                        <span class="price">$2.25</span>
+                        <button class="add-to-cart" data-name="Café Espresso" data-price="2.25">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources\capuccino-vainilla.jpg" alt="Bebida 2">
+                        <h3>Latte</h3>
+                        <p>Café con leche vaporizada y suave espuma</p>
+                        <span class="price">$2.90</span>
+                        <button class="add-to-cart" data-name="Latte" data-price="2.90">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources\Chocolateamba.jpg" alt="Bebida 3">
+                        <h3>Chocolate Caliente</h3>
+                        <p>Leche caliente con cacao y un toque de canela</p>
+                        <span class="price">$2.90</span>
+                        <button class="add-to-cart" data-name="Chocolate Caliente" data-price="2.90">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources\jugomora.jpg" alt="Bebida 4">
+                        <h3>Jugos</h3>
+                        <p>Variedad de frutas frescas a elegir</p>
+                        <span class="price">$2.90</span>
+                        <button class="add-to-cart" data-name="Jugos" data-price="2.90">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/Batido2.jpg" alt="Bebida 5">
+                        <h3>Batidos</h3>
+                        <p>Variedad de frutas frescas a elegir</p>
+                        <span class="price">$3.50</span>
+                        <button class="add-to-cart" data-name="Batidos" data-price="3.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/cola.jpg" alt="Bebida 6">
+                        <h3>Gaseosas</h3>
+                        <p>Variedad de gaseosas a elegir</p>
+                        <span class="price">$1.25</span>
+                        <button class="add-to-cart" data-name="Gaseosas" data-price="1.25">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/passion fruit.jpg" alt="Bebida 7">
+                        <h3>Jumbo Passion Fruit</h3>
+                        <p>Mezcla de FRESA con NARANJA</p>
+                        <span class="price">$3.99</span>
+                        <button class="add-to-cart" data-name="Jumbo Passion Fruit" data-price="3.99">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/tropical.jpg" alt="Bebida 8">
+                        <h3>Jumbo Tropical Fruit</h3>
+                        <p>Mezcla de MORA con GUANABANAr</p>
+                        <span class="price">$3.99</span>
+                        <button class="add-to-cart" data-name="Jumbo Tropical Fruit" data-price="3.99">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/nutella-web.jpg" alt="Bebida 9">
+                        <h3>Frozen NUTELLA</h3>
+                        <p>Frappe de NUTELLA con crema chantilli, bañado con nutella derretida, chispitas de chocolate y 2 palitos de Galleta.</p>
+                        <span class="price">$4.50</span>
+                        <button class="add-to-cart" data-name="Frozen NUTELLA" data-price="4.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/unicornio-web.jpg" alt="Bebida 10">
+                        <h3>Frozen UNICORNIO</h3>
+                        <p>Frappe de FRUTOS ROJOS con crema chantilli, Chispas de Colores y masmelo de Unicornio</p>
+                        <span class="price">$4.50</span>
+                        <button class="add-to-cart" data-name="Frozen UNICORNIO" data-price="4.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/oreo-web.jpg" alt="Bebida 11">
+                        <h3>Frozen OREO</h3>
+                        <p>Frappe de OREO con crema chantilli, bañada con jarabe de chocolate y chispitas.</p>
+                        <span class="price">$4.50</span>
+                        <button class="add-to-cart" data-name="Frozen OREO" data-price="4.50">Ordenar</button>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="Sources\capuccino-vainilla.jpg" alt="Bebida 2">
-                    <h3>Latte</h3>
-                    <p>Café con leche vaporizada y suave espuma</p>
-                    <button>Ver Más</button>
-                </div>
-                <div class="item">
-                    <img src="Sources\Chocolateamba.jpg" alt="Bebida 3">
-                    <h3>Chocolate Caliente</h3>
-                    <p>Leche caliente con cacao y un toque de canela</p>
-                    <button>Ver Más</button>
-                </div>
-                <div class="item">
-                    <img src="Sources\jugomora.jpg" alt="Bebida 4">
-                    <h3>Jugo Natural</h3>
-                    <p>Variedad de frutas frescas a elegir</p>
-                    <button>Ver Más</button>
-                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
             </div>
         </div>
 
@@ -100,30 +184,57 @@
         <div class="menu-section">
             <h2>Dulces y Salados</h2>
             <div class="menu-items">
-                <div class="item">
-                    <img src="https://www.pequerecetas.com/wp-content/uploads/2018/09/brownie-de-chocolate-receta-800x571.jpg" alt="Dulce 1">
-                    <h3>Brownie</h3>
-                    <p>Brownie de chocolate con nueces</p>
-                    <button>Ver Más</button>
+                <div class="menu-items slider">
+                    <div class="item">
+                        <img src="https://www.pequerecetas.com/wp-content/uploads/2018/09/brownie-de-chocolate-receta-800x571.jpg" alt="Dulce 1">
+                        <h3>Brownie</h3>
+                        <p>Brownie de chocolate con nueces</p>
+                        <button>Ver Más</button>
+                    </div>
+                    <div class="item">
+                        <img src="https://sarasellos.com/wp-content/uploads/2024/04/cheesecake-de-fresa.jpg" alt="Dulce 2">
+                        <h3>Cheesecake</h3>
+                        <p>Cheesecake clásico con fresas frescas</p>
+                        <button>Ver Más</button>
+                    </div>
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtTk19SgyBdXKVbWhk8CoYh-zFxYu-OIwqBw&s" alt="Dulce 3">
+                        <h3>Croissant</h3>
+                        <p>Croissant de mantequilla, perfecto para acompañar con café</p>
+                        <button>Ver Más</button>
+                    </div>
+                    <div class="item">
+                        <img src="https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_fpa6sn8vqc_empanadas-1024x683.jpg.webp" alt="Dulce 4">
+                        <h3>Empanada</h3>
+                        <p>Empanada de carne o queso, crujiente y deliciosa</p>
+                        <button>Ver Más</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/mousse.jpg" alt="Dulce 5">
+                        <h3>Mousse Maracuyá</h3>
+                        <p>Delicioso mousse de maracuya con el toque exacto de acidez.</p>
+                        <span class="price">$1.50</span>
+                        <button class="add-to-cart" data-name="Mousse Maracuyá" data-price="1.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/paleta_chocolate.jpg" alt="Dulce 5">
+                        <h3>Paleta de chocolate</h3>
+                        <p></p>
+                        <span class="price">$0.50</span>
+                        <button class="add-to-cart" data-name="Paleta de chocolate" data-price="0.50">Ordenar</button>
+                    </div>
+                    <div class="item">
+                        <img src="Sources/mixtapeque.jpg" alt="Dulce 6">
+                        <h3>Mixtas</h3>
+                        <p>Variedad de Embutidos y Encurtidos.</p>
+                        <span class="price">$4.99</span>
+                        <button class="add-to-cart" data-name="Mixta Pequeña" data-price="4.99">Ordenar</button>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="https://sarasellos.com/wp-content/uploads/2024/04/cheesecake-de-fresa.jpg" alt="Dulce 2">
-                    <h3>Cheesecake</h3>
-                    <p>Cheesecake clásico con fresas frescas</p>
-                    <button>Ver Más</button>
-                </div>
-                <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtTk19SgyBdXKVbWhk8CoYh-zFxYu-OIwqBw&s" alt="Dulce 3">
-                    <h3>Croissant</h3>
-                    <p>Croissant de mantequilla, perfecto para acompañar con café</p>
-                    <button>Ver Más</button>
-                </div>
-                <div class="item">
-                    <img src="https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_fpa6sn8vqc_empanadas-1024x683.jpg.webp" alt="Dulce 4">
-                    <h3>Empanada</h3>
-                    <p>Empanada de carne o queso, crujiente y deliciosa</p>
-                    <button>Ver Más</button>
-                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
             </div>
         </div>
     </section>
@@ -132,6 +243,14 @@
         <img src="Sources\3.jpg" alt="Banner de Menú">
     </div>
 
+    <div id="cart-container">
+        <h2>Carrito</h2>
+        <div id="cart-summary">
+            <p>El carrito está vacío.</p>
+        </div>
+        <button id="go-to-payment" style="display: none;">Ir a Pago</button>
+    </div>
+    
     <!-- Pie de Página -->
 <footer class="footer">
     <div class="footer-container">
@@ -160,5 +279,91 @@
         </div>
     </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Limpia los datos del carrito al cargar la página
+        localStorage.removeItem('cart'); // Elimina cualquier carrito previo guardado
+        const cart = []; // Reinicia el carrito en memoria
+
+        // Botones para agregar al carrito
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const name = e.target.dataset.name;
+                const price = parseFloat(e.target.dataset.price);
+
+                // Buscar si el producto ya está en el carrito
+                const item = cart.find(product => product.name === name);
+                if (item) {
+                    item.quantity += 1;
+                    item.totalPrice = item.quantity * price;
+                } else {
+                    cart.push({ name, price, quantity: 1, totalPrice: price });
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartUI();
+            });
+        });
+
+        // Función para actualizar la interfaz del carrito
+        function updateCartUI() {
+            const cartSummary = document.querySelector('#cart-summary');
+            const goToPayment = document.querySelector('#go-to-payment');
+
+            if (cart.length > 0) {
+                cartSummary.innerHTML = cart.map(item =>
+                    `<p>${item.quantity}x ${item.name} - $${item.totalPrice.toFixed(2)}</p>`
+                ).join('');
+                cartSummary.innerHTML += `<p><strong>Total:</strong> $${cart.reduce((sum, item) => sum + item.totalPrice, 0).toFixed(2)}</p>`;
+                goToPayment.style.display = 'block';
+            } else {
+                cartSummary.innerHTML = `<p>El carrito está vacío.</p>`;
+                goToPayment.style.display = 'none';
+            }
+        }
+
+        // Botón para ir a la página de pago
+        document.getElementById('go-to-payment').addEventListener('click', () => {
+            window.location.href = 'Reservas.html#Metodos-de-pago'; // Cambia a la página de pago
+        });
+
+        // Actualizar el carrito al cargar la página
+        updateCartUI();
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Función para inicializar un carrusel
+        function initCarousel(section) {
+            const slider = section.querySelector(".slider");
+            const items = slider.querySelectorAll(".item");
+            const prevButton = section.querySelector(".prev");
+            const nextButton = section.querySelector(".next");
+            let currentIndex = 0;
+
+            // Función para mostrar el elemento actual
+            function showCurrent() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            // Evento para el botón "anterior"
+            prevButton.addEventListener("click", () => {
+                slider.scrollLeft -= slider.offsetWidth;
+            });
+
+            // Evento para el botón "siguiente"
+            nextButton.addEventListener("click", () => {
+                slider.scrollLeft += slider.offsetWidth;
+            });
+        }
+
+        // Inicializar todos los carruseles en las secciones del menú
+        document.querySelectorAll(".menu-section").forEach(section => {
+            initCarousel(section);
+        });
+    });
+</script>
+
 </body>
 </html>
