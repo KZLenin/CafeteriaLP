@@ -1,83 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
-    <link rel="icon" href="Sources\logo.png">
-    <link rel="stylesheet" href="Styles\stylereservas.css">
+    <title>Held Coffee Shop</title>
+    <link rel="stylesheet" href="Styles/stylereservas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class = "header">
-        <div class = "menu container">
-            <div class = "logo">
-                <img src="Sources\logo.png" alt="logo cafeteria">
+    <header>
+        <div class="menu container">
+            <div class="logo">
+                <a href="#"><img src="Sources/logo.jpg" alt="logo cafetería"></a>
             </div>
-            <nav class = "navbar">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
+            <button id = "abrir" class="abrir-menu"><i class="bi bi-menu-up"></i></button>
+            <nav class="nav" id = "nav">
+                <button class = "cerrar-menu" id = "cerrar"><i class="bi bi-x-circle-fill"></i></button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Inicio</a></li>
                     <li><a href="informacion.html">Información</a></li>
-                    <li><a href="menu.html"> Menú</a></li>
+                    <li><a href="menu.html">Menú</a></li>
                     <li><a href="Reservas.html">Reservas</a></li>
                 </ul>
-            </nav>
-        </div>
-
-        <div class = "header-content">
-            <h1>Reserva tu experiencia en Held Coffee Shop.</h1>
-            <p>Para que todos nuestros clientes puedan disfrutar de una experiencia agradable en Held Coffee Shop, te pedimos que tomes en cuenta las siguientes condiciones para realizar una reserva.
-        </div>
     </header>
-    <div class="banner" id="informacion">
-        <div class="banner-content">
-            <h2>Condiciones de Reservas</h2>
-            <p>
-                <br>
-            1. Las reservas están sujetas a disponibilidad y deben confirmarse al menos 24 horas antes de la fecha deseada.
-            <br>
-            2. Si no puedes asistir, agradecemos que canceles o modifiques tu reserva con antelación.
-            <br>
-            3. Las reservas se mantendrán por un máximo de 15 minutos de tolerancia. 
-            <br>
-            4. Si necesitas realizar una reserva para un grupo grande o para eventos especiales, 
-            por favor contáctanos directamente.
-            <br>
-            <p class = 'parrafo-content'> Queremos asegurarnos de que tengas una experiencia cómoda y sin contratiempos.
-            ¡Gracias por tu comprensión y preferencia!</p>
-            </p>
-        </div>
-        <div class="banner-image">
-            <img src="https://img.freepik.com/fotos-premium/calendario-fecha-taza-cafe_1292623-723.jpg" alt="Imagen ilustrativa de condiciones">
-        </div>
-    </div>
+     
     <main>
-        <section id="reservas">
-            <h2 class = 'reservas-title'>Reserva tu espacio</h2>
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Nombre completo:</label>
-                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+        <section class="reserva">
+            <div class="reserva-contenido">
+                <div class="texto">
+                    <h2>Reserva tu Experiencia en Held Coffee Shop</h2>
+                    <h3>Condiciones</h3>
+                    <p>Para que todos nuestros clientes puedan disfrutar de una experiencia agradable, ten en cuenta las siguientes condiciones:</p>
+                    <ul>
+                        <li>Reservas sujetas a disponibilidad y deben confirmarse 24 horas antes.</li>
+                        <li>Por favor, cancela o modifica tu reserva si no puedes asistir.</li>
+                        <li>Tolerancia máxima de 15 minutos después de la hora reservada.</li>
+                        <li>Para grupos grandes o eventos especiales, contáctanos directamente.</li>
+                    </ul>
+                    <br>
+                    <p class = 'parrafo-content'> Queremos asegurarnos de que tengas una experiencia cómoda y sin contratiempos.
+                    ¡Gracias por tu comprensión y preferencia!</p>
+                    </p>
                 </div>
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                <div class="foto-cafe-contenedor">
+                    <img src="Sources/c2.png" alt="Café" class="foto-cafe">
                 </div>
-                <div>
-                    <label for="date">Fecha de la reserva:</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-                <div>
-                    <label for="time">Hora de la reserva:</label>
-                    <input type="time" id="time" name="time" required>
-                </div>
-                <div>
-                    <label for="notes">Notas adicionales:</label>
-                    <textarea id="notes" name="notes" rows="4" placeholder="Escribe algún detalle adicional.."></textarea>
-                </div>
-                <button type="submit">Reservar</button>
-            </form>
+            </div>
         </section>
+
+        <section id="reservas" class="reservas-section">
+            <div class="reservas-container">
+                <div class="reservas-image">
+                    <img src="https://img.freepik.com/fotos-premium/calendario-fecha-taza-cafe_1292623-723.jpg" alt="Imagen ilustrativa de condiciones">
+                </div>
+                <div class="reservas-form">
+                    <h2 class="reservas-title">Reserva tu espacio</h2>
+                    <form action="#" method="post">
+                        <div>
+                            <label for="name">Nombre completo:</label>
+                            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                        </div>
+                        <div>
+                            <label for="date">Fecha de la reserva:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div>
+                            <label for="time">Hora de la reserva:</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div>
+                            <label for="notes">Notas adicionales:</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Escribe algún detalle adicional..."></textarea>
+                        </div>
+                        <button type="submit">Reservar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
     </main>
+
     <section class='pago-content'>
         <h2 class='pago-title'>METODOS DE PAGO</h2>
         <div class="pago-list">
@@ -90,7 +99,7 @@
             No. Cuenta: XXXXXXX-44
             <br>
             Cuenta Ahorros.</p>
-        <p class='pago-p'>TARJETAS DE CREDITO (Descuento en sus compras)
+        <p class='pago-p'>TARJETAS DE CREDITO <br> (Descuento en sus compras)
                 <br>
                 <img class = 'pago-img' src="Sources/tarjetas-img.jpg" alt=""></p>
         
@@ -106,54 +115,47 @@
         </div>
     </section> 
 
-    <section class='opiniones-content'>
-        <h2 class='opiniones-title'>Opiniones destacadas de nuestros clientes</h2>
-        <div class="opiniones-list">
-            <p class='opiniones-p'>"Una experiencia maravillosa. El ambiente es acogedor, y el café es excelente. Volveré sin duda." 
-                <br>- Handel Manobanda
-                <br> ⭐ ⭐ ⭐ ⭐ ⭐</p>
-    
-            <p class='opiniones-p'>"Perfecto para una reunión de amigos. Los postres son deliciosos y la atención es muy cálida." 
-                <br>- Danna Lopez
-                <br> ⭐ ⭐ ⭐ ⭐ </p>
-    
-            <p class='opiniones-p'>"El lugar muy agradable, pero los tiempos de espera en algunas ocasiones pueden ser largos. Aun así, recomiendo
-                la cafetería :D" 
-                <br>- Lenin Taco
-                <br>⭐ ⭐ ⭐ </p>
+    <section id="opiniones" class="opiniones">
+        <h3>Opiniones de Nuestros Clientes</h3>
+        <div class="opiniones-container">
+            <div class="comentario">
+                <p>"Una experiencia maravillosa. El ambiente es acogedor y el café excelente." <br> ★★★★★</p>
+            </div>
+            <div class="comentario">
+                <p>"Perfecto para reuniones. Los postres son deliciosos." <br> ★★★★☆</p>
+            </div>
+            <div class="comentario">
+                <p>"Lugar agradable, aunque los tiempos de espera pueden mejorar." <br> ★★★☆☆</p>
+            </div>
+            <div class="comentario">
+                <p>"La atención fue excelente. Sin duda, volveré pronto." <br> ★★★★★</p>
+            </div>
+            <div class="comentario">
+                <p>"El café es de los mejores que he probado, pero me gustaría más opciones veganas." <br> ★★★★☆</p>
+            </div>
+            <div class="comentario">
+                <p>"Un lugar único para relajarse después del trabajo. Música agradable." <br> ★★★★★</p>
+            </div>
+            <div class="comentario">
+                <p>"Tiene un ambiene muy acojedor y  Música agradable." <br> ★★★★★</p>
+            </div>
         </div>
-    </section>    
+    </section>
+    
 
-    <!--Pie de pagina-->
-<footer class="footer">
-    <div class="footer-container">
-        <!-- Políticas y Términos -->
-        <div class="footer-section">
-            <a href="#" class="footer-link">Políticas de Privacidad</a> |
-            <a href="#" class="footer-link">Términos de Uso</a>
+    <footer class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="Sources/facebook.png" alt="Facebook"></a>
+                <a href="https://wa.me" target="_blank"><img src="Sources/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Sources/instagram.png" alt="Instagram"></a>
+            </div>
+            <p class="footer-p">© 2024 HELD Coffee Shop. Todos los derechos reservados.</p>
         </div>
-        
-        <!-- Copyright -->
-        <div class="footer-section">
-            <p>© 2024 HELD Coffee Shop. Todos los derechos reservados.</p>
-        </div>
-        
-        <!-- Redes Sociales -->
-        <div class="footer-section social-icons">
-            <a href="https://www.facebook.com/DannaMishelle" target="_blank">
-                <img src="Sources/facebook.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://wa.me/983203628" target="_blank">
-                <img src="Sources/whatsapp.png" alt="WhatsApp" class="social-icon">
-            </a>
-            <a href="https://www.instagram.com/danna.mishelle._" target="_blank">
-                <img src="Sources/instagram.png" alt="Instagram" class="social-icon">
-            </a>
-        </div>
-    </div>
-</footer>
+    </footer>
+    <script src="../CafeteriaLP-main/Styles/script.js"></script>
 </body>
 </html>
+
 
 
 
